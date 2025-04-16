@@ -17,25 +17,41 @@
         <label for="nascimento">Data de nascimento:</label>
         <input type="date" id="nascimento" required>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" required>
-
+        <label for="genero">Gênero:</label>
+        <select id="genero" required>
+            <option value="">Selecione</option>
+            <option value="masculino" id="genero_maculino">Masculino</option>
+            <option value="feminino" id="genero_feminino">Feminino</option>
+            <option value="outro" id="genero_outro">Outro</option>
+        </select>
         <label for="telefone">Telefone</label>
         <input type="tel" id="telefone" placeholder="(99) 99999-9999" required>
 
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required>
+
+        <label for="senha">Crie uma senha forte:</label>
+        <input type="password" id="senha" required>
+
+        <label for="confirmacao_senha">Confirme sua senha:</label>
+        <input type="password" id="confirmacao_senha" required>
+
         <h3>Endereço</h3>
 
-        <label for="Rua">Rua:</label>
-        <input type="text" id="Rua" required>
+        <label for="estado">Estado:</label>
+        <input type="text" id="estado" required>
 
-        <label for="numero">Número:</label>
-        <input type="number" id="numero" required>
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" required>
 
         <label for="bairro">Bairro:</label>
         <input type="text" id="bairro" required>
 
-        <label for="cidade">Cidade:</label>
-        <input type="text" id="cidade" required>
+        <label for="numero">Número:</label>
+        <input type="number" id="numero" required>
+
+        <label for="Rua">Rua:</label>
+        <input type="text" id="Rua" required>
 
         <label for="complemento">Complemento:</label>
         <input type="text" id="complemento" required>
@@ -44,22 +60,108 @@
         <input type="text" id="profissao" required>
 
         <label for="escolaridade">Escolaridade:</label>
-        <input type="text" id="escolaridade" required>
         <select id="escolaridade" required>
             <option value="">Selecione</option>
-            <option value="fundamental">Ensino Fundamental</option>
-            <option value="medio">Ensino Médio</option>
-            <option value="superior">Ensino Superior</option>
-            <option value="pos">Pós-graduação</option>
+            <option value="fundamental" id="escolaridade_fundamental">Ensino Fundamental</option>
+            <option value="medio" id="escolaridade_medio">Ensino Médio</option>
+            <option value="superior" id="escolaridade_superior">Ensino Superior</option>
+            <option value="pos" id="escolaridade_pos">Pós-graduação</option>
         </select>
 
         <label for="experiencia"> Experiência Profissional:</label>
         <textarea id="experiencia" rows="3"></textarea>
 
-        <label for="competencias">Competências:</label>
-        <textarea id="competencias" rows="3"></textarea>
+        <label for="curso_">Qual curso você deseja fazer?:</label>
+        <select id="curso" required>
+            <option value="">Selecione</option>
+            <option value="civil" id="curso_civil">Engenharia Civil</option>
+            <option value="ambiental" id="curso_ambiental">Engenharia Ambiental e Sanitária</option>
+            <option value="computacao" id="curso_computacao">Engenharia da Computação</option>
+            <option value="automacao" id="curso_automacao">Engenharia de Controle e Automação</option>
+            <option value="petroleo" id="curso_petroleo">Engenharia de Petróleo</option>
+            <option value="producao" id="curso_producao">Engenharia de Produção</option>
+            <option value="telecomunicacao" id="curso_telecomunicacao">Engenharia de Telecomunicações</option>
+            <option value="eletrica" id="curso_eletrica">Engenharia Elétrica</option>
+            <option value="mecanica" id="curso_mecanica">Engenharia Mecânica</option>
+            <option value="quimica" id="curso_quimica">Engenharia Química</option>
+        </select>
+
+        <label for="motivicao"> O que te motivou a escolher este curso?:</label>
+        <textarea id="motivicao" rows="3"></textarea>
+
+        <label for="conhecimento">Como você conheceu nossa faculdade?:</label>
+        <select id="conhecimento" required>
+            <option value="">Selecione</option>
+            <option value="amigo" id="conhecimento_amigo">Amigos</option>
+            <option value="redes" id="conhecimento_redes"> Redes Sociais</option>
+            <option value="outdoor" id="conhecimento_outdoor">Outdoores</option>
+            <option value="outro" id="conhecimento_outro">Outro</option>
+        </select>
+
+        <label for="curso_tecnico">Você já fez algum curso técnico?</label>
+        <input type="text" id="curso_tecnico" placeholder="Se sim, qual?">
+
+        <label for="deficiencia">Você possui alguma deficiência?</label>
+        <select id="deficiencia">
+            <option value="">Selecione</option>
+            <option value="nao">Não</option>
+            <option value="visual">Visual</option>
+            <option value="auditiva">Auditiva</option>
+            <option value="motora">Motora</option>
+            <option value="outra">Outra</option>
+        </select>
+
+        <label for="trabalha">Você está trabalhando atualmente?</label>
+        <select id="trabalha">
+            <option value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+
+        <label for="horas_estudo">Quantas horas por semana você pode estudar?</label>
+        <input type="number" id="horas_estudo" min="1" placeholder="Ex: 10">
+
+        <label for="internet">Você tem acesso à internet em casa?</label>
+        <select id="internet">
+            <option value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+
+        <label for="nivel_informatica">Nível de conhecimento em informática:</label>
+        <select id="nivel_informatica">
+            <option value="">Selecione</option>
+            <option value="basico">Básico</option>
+            <option value="intermediario">Intermediário</option>
+            <option value="avancado">Avançado</option>
+        </select>
+
+        <label for="idiomas">Você fala outro idioma além do português?</label>
+        <input type="text" id="idiomas" placeholder="Quais?">
+
+        <label for="intercambio">Você tem interesse em intercâmbio acadêmico?</label>
+        <select id="intercambio">
+            <option value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+
+        <label for="trabalho_voluntario">Já fez trabalho voluntário?</label>
+        <select id="trabalho_voluntario">
+            <option value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+
+        <label for="expectativas">O que espera do curso?</label>
+        <textarea id="expectativas" rows="3"></textarea>
+
+        <label for="diferencial">O que você gostaria de ver como diferencial na faculdade?</label>
+        <textarea id="diferencial" rows="3"></textarea>
+
 
         <button type="submit">Enviar</button>
+        
     </form>
     <script src="../js/script.js"></script>
 </body>
